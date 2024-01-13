@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vh;
+            background-color: green;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+           /* animation-name: BiswajitKaAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-direction: reverse;*/
+
+            /* all property  here i am use 2 animation property */
+            animation: BiswajitKaAnimation 2s ease-in-out 3s infinite reverse 
+
+            ,biswajit 2s ease-out infinite forwards;
+           
+
+
+        }
+        /* 1st annimation */
+        @keyframes BiswajitKaAnimation {
+            from{
+                background-color: red;
+                /* transform: translateX(10px); */
+            }
+            to{
+                background-color: yellow;
+                ;
+            }
+            
+        }
+        /* Secound annimation
+        we can create many transform */
+        @keyframes biswajit {
+            0%{
+                transform: rotate(100deg);
+            }
+            25%{transform: rotate(150deg);}
+            50%{transform: rotate(200deg);}
+            75%{transform: rotate(250deg);}
+            100%{transform: rotate(300deg);}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

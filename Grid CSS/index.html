@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid rgb(69, 69, 54);
+            display: grid;
+            /* grid-template-columns:[pehla] 120px [doosra]100px[t];
+            grid-template-rows: 100px 100px 100px; */
+            grid-template-columns: repeat(4,80px);
+            grid-template-rows: repeat(2,80px);
+            gap: 34px;
+            row-gap: 20px;
+            column-gap: 23px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        /* Overlap 1 and 4  */
+
+        .item-4{
+            grid-row: 1/2;
+            grid-column: doosra/3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+
+        
+    </div>
+</body>
+</html>

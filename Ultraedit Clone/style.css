@@ -1,0 +1,145 @@
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+
+}
+
+.logo img {
+    height: 40px;
+    /* mask-type: alpha; */
+    /* width: fit-content; */
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 6px;
+}
+
+
+/* body */
+
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 69px;
+    font-family: sans-serif;
+}
+
+.first span {
+    font-size: 36px;
+}
+
+.first span img {
+    width: 83px;
+    margin: 0 23px;
+}
+
+.first p {
+    font-size: 23px;
+    width: 44vw;
+    text-align: center;
+
+}
+
+.btn {
+    background-color: #00b6d1;
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 12px 0;
+    cursor: pointer;
+    
+}
+.btn a{
+    text-decoration: none;
+    color:wheat;
+}
+
+/* for 2nd body */
+.secound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download img{
+    
+    height: 34px;
+    width: 34px;
+    padding: 0 13px;
+    /* flex-direction: column; */
+}
+.small {
+    font-size: 12px;
+}
+
+.item{
+    padding: 23px;
+    background-color: #f9f9f9;
+    gap: 30px;
+    /* border:2px solid rgb(116, 116, 60); */
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+
+}
+.grid{
+    margin: 23px;
+    display: grid;
+    gap: 23px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 36px;
+}
+.green{
+    background-color: rgb(104, 181, 104);
+    cursor: pointer;
+
+}
+.download :nth-child(2){
+    font-size: 23px;
+}
+.download {
+    display: flex;
+    font-family:  sans-serif;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width:1145px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

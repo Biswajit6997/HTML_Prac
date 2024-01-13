@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            transform: rotate(90deg);
+            /* transform-origin: -50% -50%; */
+            /* transform:rotateZ(40deg); */
+            /* transform: skew(34deg); */
+            transform: translateY(100%) skewX(40deg) translateX(45%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            margin: 55px;
+            width: 100vw;
+            height: 80vw;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

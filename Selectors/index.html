@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+       
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+        /* Id Selector */
+        #green{
+            background-color: black;
+            color: white;
+        }
+        /* Child Selector */
+        div > p{
+            background-color: green;
+            color: aliceblue;
+        }
+        /*Decendant Selector  */
+        div  p{
+            background-color: green;
+            color: aliceblue;
+        }
+        /* Universial Selector */
+        *{
+            padding: 2px;
+            margin: 5px;
+        }
+
+        /* pseudo Selector */
+        a :visited{
+            color: yellow;
+        }
+        a :active{
+            background-color: yellow;
+        }
+        a:hover{
+            background-color: red;
+        }
+        p:first-child{
+            background-color: rgb(27, 131, 141);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <main>
+            <p>I am First</p>
+            <p>I am Secound</p>
+        </main>
+    </div>
+    <div class="red">I am  a Div</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, mollitia.</p>
+    <div>
+        <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus autem incidunt? Perspiciatis iste sed commodi repellat minima eveniet d</p>
+      </article>
+    </div>
+    <div>
+        <h3>Example of Decendant Selector</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus autem incidunt? Perspiciatis iste sed commodi repellat minima eveniet distinctio!</p>
+    </div>
+    <p id="green">this is a paragraph</p>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Casecade in CSS</title>
+    <style>
+        /* The specificity of the h1 tag is 1 */
+        h1{
+            background-color: yellow;
+        }
+        /* The specificity of the class tag is 10 */
+
+        .yellow{
+            background-color: yellowgreen;
+            color: aqua;
+        }
+        /* The specificity of the class tag is 10 */
+
+        .cred{
+            background-color: red;
+            color: black
+
+        }
+        /* THis is an example of attribute selector .The specificity of this selector is 10 */
+
+        [data-x="a"]{
+            background-color: green;
+            color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        <h1 class="yellow cred cpurple" data-x="a">
+            CSS Specificity
+        </h1>
+    </p>
+</body>
+
+</html>
